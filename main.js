@@ -33,10 +33,10 @@ const guessingGame = (password, passwordType) => {
 
 // Function to handle the guess submission
 const submitGuess = () => {
-  console.time("1")
+  console.time("1");
   // for(let i = 0; i <wait * factor ; i++){}
-  if(factor > 10) {throw Error}
-  factor++;
+  // if(factor > 10) {throw Error}
+  // factor++;
   const passwordType = parseInt(document.getElementById("passwordType").value);
   const passwordInput = document.getElementById("passwordInput").value;
   const result = guessingGame(passwordInput, passwordType);
@@ -44,6 +44,6 @@ const submitGuess = () => {
   document.getElementById("result").innerHTML = result
     ? `<b>${passwordInput}</b> is Correct!👏🏻 You have guessed <b> ${numberOfguesses} </b>  times.`
     : `<b>${passwordInput}</b> is Incorrect!❌ You have guessed <b> ${numberOfguesses} </b>  times.`;
-    console.timeEnd("1")
+  console.timeEnd("1");
 };
 document.getElementById("guess").addEventListener("click", submitGuess);
