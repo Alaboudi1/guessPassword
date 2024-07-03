@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Password Guessing Game</title>
+
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f9;
+        margin: 0;
+        padding: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+      h1 {
+        color: #333;
+      }
+      p {
+        color: #666;
+      }
+      select,
+      input {
+        padding: 10px;
+        margin-right: 10px;
+        border: 2px solid #ccc;
+        border-radius: 5px;
+        outline: none;
+      }
+      button {
+        background-color: #5c67f2;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+      }
+      button:hover {
+        background-color: #4a54e1;
+      }
+      #result {
+        margin-top: 20px;
+        color: #5c67f2;
+        font-size: 1.2em;
+      }
+    </style>
+    <script type="module" crossorigin src="/assets/index-D1Kx8IH-.js"></script>
+  </head>
+  <body>
+    <div>
+      <h1>Password Guessing Game</h1>
+      <p>Guess the password based on the type selected:</p>
+      <select id="passwordType" title="Password Type">
+        <option value="1">1 character</option>
+        <option value="2">1 character, 1 number</option>
+        <option value="3">2 characters</option>
+        <option value="4">2 characters, 1 number</option>
+        <option value="5">1 uppercase, 1 lowercase, 1 number</option>
+        <option value="6">2 mixed case characters, 1 number</option>
+        <option value="7">Mix of 12 characters (upper, lower, numbers)</option>
+      </select>
+      <input
+        type="password"
+        id="passwordInput"
+        placeholder="Enter your guess here"
+      />
+      <button id="guess">Guess</button>
+      <p id="result"></p>
+    </div>
+  </body>
+</html>
