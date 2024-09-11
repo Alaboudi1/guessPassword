@@ -5,7 +5,7 @@ const passwordLength3 = "fh";
 const passwordLength4 = "jb3";
 const passwordLength5 = "A4";
 const passwordLength6 = "Bc5";
-const passwordLength7 = "Aa1Bb2Cc3Dd4Ee5Ff6";
+const passwordLength7 = "Aa1Bb2Cc3Dd4";
 
 let numberOfguesses = 0;
 const wait = 100000000;
