@@ -3,7 +3,7 @@ const passwordLength1 = "c";
 const passwordLength2 = "g2";
 const passwordLength3 = "fh";
 const passwordLength4 = "jb3";
-const passwordLength5 = "A41";
+const passwordLength5 = "A4z";
 const passwordLength6 = "Bc5";
 const passwordLength7 = "Az1Bb2Cc3Dd4";
 
